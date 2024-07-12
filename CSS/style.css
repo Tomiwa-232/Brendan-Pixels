@@ -41,7 +41,6 @@ header h1 {
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
-    flex-wrap: wrap;
 }
 
 .main .grid_4 {
@@ -53,7 +52,6 @@ header h1 {
     text-align: center;
     box-shadow: 5px 5px 5px rgba(2, 2, 2, 0.479);
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-    flex: 1 1 100%; /* Take full width on mobile */
 }
 
 .main .grid_4:hover {
@@ -90,7 +88,6 @@ header h1 {
     align-items: center;
     justify-content: center;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
-    flex: 1 1 100%; /* Take full width on mobile */
 }
 
 .price .amount {
@@ -114,6 +111,7 @@ header h1 {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
     transform: scale(1.05);
 }
+
 
 /* =note section */
 .note {
@@ -139,10 +137,11 @@ footer {
     border-top: 2.5px solid #858585;
 }
 
+
 footer h1 {
     background: url(../IMG/BrendanPixel.png) no-repeat;
     background-size: cover;
-    text-indent: -999px;
+    text-indent: -9999px;
     width: 200px;
     height: 50px;
     margin-left: -20px;
@@ -162,6 +161,7 @@ footer p strong {
     color: #b10000;
 }
 
+
 footer p a {
     color: #858585;
     text-decoration: none;
@@ -172,7 +172,7 @@ footer p:hover {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
-footer .h1-2 {
+footer .h1-2{
     background: url(../IMG/LOGO.png) no-repeat;
     background-size: cover;
     text-indent: -9999px;
@@ -190,35 +190,35 @@ footer .h1-2:hover {
     filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.2)); /* Added image shadow */
 }
 
-/* Media Queries */
-@media (min-width: 768px) {
-    .main .grid_4 {
-        flex: 1 1 30%; /* 3 columns on tablet and above */
+@media (max-width: 768px) {
+    .container_12 {
+        margin-top: 20px;
     }
-
-    .price {
-        flex: 1 1 30%; /* 3 columns on tablet and above */
-    }
-
-    .note {
-        flex: 1 1 60%; /* Note takes up more space */
-    }
-}
-
-@media (max-width: 767px) {
-    .main {
-        flex-direction: column; /* Stack elements vertically on mobile */
-    }
-
-    .main .grid_4 {
-        margin: 10px 0; /* Add margin between stacked elements */
-    }
-
-    .price {
-        margin: 10px 0; /* Add margin between stacked elements */
+    
+    header h1 {
+        font-size: 32px; /* Decrease font size for header on mobile */
     }
 
     .note {
-        flex: 1 1 100%; /* Note takes full width on mobile */
+        margin: 10px 0; /* Reduce margin for the note section on mobile */
+    }
+
+    .note p {
+        font-size: 14px; /* Decrease font size for note section text on mobile */
+    }
+
+    footer {
+        text-align: center; /* Center align footer content on mobile */
+        padding: 10px 0; /* Add padding to footer content */
+    }
+
+    footer h1,
+    footer .h1-2 {
+        margin: 10px auto; /* Center align and adjust margins for footer logos */
+        display: block;
+    }
+
+    footer p {
+        margin: 5px auto; /* Center align and adjust margins for footer text */
     }
 }
