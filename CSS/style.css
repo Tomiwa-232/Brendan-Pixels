@@ -245,3 +245,52 @@ footer .h1-2:hover {
         margin: 5px auto; /* Center align and adjust margins for footer text */
     }
 }
+    /* Mobile responsiveness */
+    @media screen and (max-width: 767px) {
+        .main {
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .main .grid_4 {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .price .amount {
+            font-size: 24px;
+            padding: 5px 10px;
+        }
+
+        .price p {
+            font-size: 14px;
+        }
+
+        .note {
+            width: 90%;
+            margin: 20px auto;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+        }
+
+        footer h1,
+        footer .h1-2 {
+            display: block;
+            margin: 0 auto 10px;
+            text-indent: 0;
+            background: none;
+            font-size: 24px;
+            width: auto;
+            height: auto;
+        }
+
+        footer p {
+            display: block;
+            margin: 10px 0 0;
+        }
+    }
