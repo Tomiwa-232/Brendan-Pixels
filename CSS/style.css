@@ -222,3 +222,32 @@ footer .h1-2:hover {
         margin: 5px auto; /* Center align and adjust margins for footer text */
     }
 }
+
+@media (max-width: 768px) {
+    .main {
+        flex-wrap: wrap; /* Ensure grid items wrap on smaller screens */
+        justify-content: center; /* Center align grid items */
+    }
+
+    .grid_4 {
+        width: 100%; /* Full width for grid items on mobile */
+        margin-bottom: 20px; /* Add margin between grid items */
+    }
+
+    .main .grid_4 {
+        padding: 15px; /* Adjust padding for grid items */
+    }
+
+    .main .grid_4 p {
+        text-align: left; /* Ensure paragraph text aligns left on mobile */
+        font-size: 14px; /* Decrease font size for paragraph text */
+        margin: 10px 0; /* Adjust margins for paragraph text */
+        line-height: 1.5; /* Increase line height for better readability */
+        word-wrap: break-word; /* Break words to prevent horizontal overflow */
+    }
+
+    .main .grid_4 h3 {
+        font-size: 20px; /* Decrease font size for heading text */
+        margin-bottom: 10px; /* Adjust margin for heading text */
+    }
+}
