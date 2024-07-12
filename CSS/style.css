@@ -25,7 +25,6 @@ body {
 
 .container_12 {
     margin-top: 60px;
-    padding: 0 15px;
 }
 
 /* =header */
@@ -35,14 +34,12 @@ header h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     color: #000000;
-    margin-bottom: 20px;
 }
 
 /* =main section */
 .main {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     margin: 20px 0;
 }
 
@@ -55,9 +52,6 @@ header h1 {
     text-align: center;
     box-shadow: 5px 5px 5px rgba(2, 2, 2, 0.479);
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-    flex: 1;
-    min-width: 280px;
-    margin: 10px;
 }
 
 .main .grid_4:hover {
@@ -87,16 +81,13 @@ header h1 {
 }
 
 .price {
-    margin-top: 20px;
+    margin-top: 2px;
     text-align: center;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
-    flex: 1;
-    min-width: 280px;
-    margin: 10px;
 }
 
 .price .amount {
@@ -121,6 +112,7 @@ header h1 {
     transform: scale(1.05);
 }
 
+
 /* =note section */
 .note {
     color: #000000;
@@ -129,8 +121,6 @@ header h1 {
     margin: 20px 0;
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
-    flex: 1;
-    min-width: 280px;
 }
 
 .note p {
@@ -146,9 +136,8 @@ header h1 {
 footer {
     border-top: 2.5px solid #858585;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
 }
+
 
 footer h1 {
     background: url(../IMG/BrendanPixel.png) no-repeat;
@@ -156,7 +145,7 @@ footer h1 {
     text-indent: -9999px;
     width: 200px;
     height: 50px;
-    margin: 0 auto;
+    margin-left: -20px;
     display: inline-block;
     vertical-align: middle;
 }
@@ -165,13 +154,14 @@ footer p {
     font-family: 'Montserrat', sans-serif;
     display: inline-block;
     vertical-align: middle;
-    margin: 10px 0;
+    margin: 0 0 0 10px;
     transition: all ease 1s;
 }
 
 footer p strong {
     color: #b10000;
 }
+
 
 footer p a {
     color: #858585;
@@ -189,7 +179,8 @@ footer .h1-2{
     text-indent: -9999px;
     width: 80px;
     height: 70px;
-    margin: 20px auto;
+    margin-left: 80px;
+    margin-top: 20px;
     display: inline-block;
     vertical-align: right;
     transition: transform 1s ease;
@@ -203,20 +194,36 @@ footer .h1-2:hover {
 @media (max-width: 768px) {
     .container_12 {
         margin-top: 20px;
-        padding: 0 10px;
     }
-
+    
     header h1 {
         font-size: 32px; /* Decrease font size for header on mobile */
     }
 
     .main {
-        flex-direction: column; /* Stack packages vertically on mobile */
+        flex-direction: column;
         align-items: center;
     }
 
+    .main .grid_4 {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .prices {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .prices .grid_4 {
+        width: 90%;
+        margin: 10px 0;
+    }
+
     .note {
-        margin: 10px 0; /* Reduce margin for the note section on mobile */
+        width: 90%;
+        margin: 10px 0;
     }
 
     .note p {
