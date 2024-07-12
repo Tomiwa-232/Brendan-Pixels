@@ -1,0 +1,191 @@
+/* =Fonts family source */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Regular.ttf') format('truetype'),
+         url('fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf') format('truetype'),
+         url('fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #F5F5F5;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.container_12 {
+    margin-top: 60px;
+}
+
+/* =header */
+header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: #000000;
+}
+
+/* =main section */
+.main {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.main .grid_4 {
+    background: #131311;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgba(2, 2, 2, 0.479);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.main .grid_4:hover {
+    background: #0c0c0c;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+.main .grid_4 h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.main .grid_4 p {
+    font-size: 16px;
+    text-align: justify;
+    clear: both;
+    border-bottom: 1px solid #d1d1d1;
+    padding-top: 5px;
+    margin-top: 25px;
+    padding-bottom: 5px;
+}
+
+.main .grid_4 i {
+    color: #4CAF50;
+    margin-right: 10px;
+}
+
+.price {
+    margin-top: 2px;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.price .amount {
+    font-size: 36px;
+    background: #b10000;
+    color: #fff;
+    margin-top: 20px;
+    padding: 0 15px;
+}
+
+.price p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    padding: 3px 5px;
+    margin: auto;
+}
+
+.price:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+    transform: scale(1.05);
+}
+
+
+/* =note section */
+.note {
+    color: #000000;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px 0;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.note p {
+    margin: 0;
+}
+
+.note p strong {
+    color: #b10000;
+    letter-spacing: 1px;
+}
+
+/* =footer */
+footer {
+    border-top: 2.5px solid #858585;
+}
+
+
+footer h1 {
+    background: url(../IMG/BrendanPixel.png) no-repeat;
+    background-size: cover;
+    text-indent: -999px;
+    width: 200px;
+    height: 50px;
+    margin-left: -20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 10px;
+    transition: all ease 1s;
+}
+
+footer p strong {
+    color: #b10000;
+}
+
+
+footer p a {
+    color: #858585;
+    text-decoration: none;
+}
+
+footer p:hover {
+    color: #000000;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+footer .h1-2{
+    background: url(../IMG/LOGO.png) no-repeat;
+    background-size: cover;
+    text-indent: -9999px;
+    width: 80px;
+    height: 70px;
+    margin-left: 80px;
+    margin-top: 20px;
+    display: inline-block;
+    vertical-align: right;
+    transition: transform 1s ease;
+}
+
+footer .h1-2:hover {
+    transform: scale(1.1); /* Increased size on hover */
+    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.2)); /* Added image shadow */
+}
