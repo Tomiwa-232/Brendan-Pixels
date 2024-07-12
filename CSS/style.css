@@ -52,8 +52,6 @@ header h1 {
     text-align: center;
     box-shadow: 5px 5px 5px rgba(2, 2, 2, 0.479);
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-    width: calc(33.33% - 20px); /* Adjust width for desktop view */
-    box-sizing: border-box; /* Include padding and border in width calculation */
 }
 
 .main .grid_4:hover {
@@ -141,7 +139,7 @@ footer {
 
 
 footer h1 {
-    background: url('../IMG/BrendanPixel.png') no-repeat;
+    background: url(../IMG/BrendanPixel.png) no-repeat;
     background-size: cover;
     text-indent: -9999px;
     width: 200px;
@@ -174,8 +172,8 @@ footer p:hover {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
-footer .h1-2 {
-    background: url('../IMG/LOGO.png') no-repeat;
+footer .h1-2{
+    background: url(../IMG/LOGO.png) no-repeat;
     background-size: cover;
     text-indent: -9999px;
     width: 80px;
@@ -222,21 +220,5 @@ footer .h1-2:hover {
 
     footer p {
         margin: 5px auto; /* Center align and adjust margins for footer text */
-    }
-
-    .main .grid_4 {
-        width: calc(50% - 20px); /* Adjust width for two columns on mobile */
-        margin-bottom: 20px; /* Add margin between grid items */
-    }
-
-    .main .grid_4 p {
-        font-size: 14px; /* Decrease font size for paragraph text on mobile */
-        margin-top: 15px; /* Adjust margin for paragraph text on mobile */
-        line-height: 1.5; /* Increase line height for better readability on mobile */
-    }
-
-    .main .grid_4 h3 {
-        font-size: 20px; /* Decrease font size for heading text on mobile */
-        margin-bottom: 10px; /* Adjust margin for heading text on mobile */
     }
 }
