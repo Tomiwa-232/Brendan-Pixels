@@ -230,8 +230,9 @@ footer .h1-2:hover {
     }
 
     .grid_4 {
-        width: 100%; /* Full width for grid items on mobile */
+        width: calc(100% - 20px); /* Adjust width to prevent overlapping */
         margin-bottom: 20px; /* Add margin between grid items */
+        box-sizing: border-box; /* Include padding and border in width calculation */
     }
 
     .main .grid_4 {
