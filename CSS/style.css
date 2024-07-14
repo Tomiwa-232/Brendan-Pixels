@@ -81,7 +81,7 @@ header h1 {
 }
 
 .price {
-    margin-top: 2px;
+    margin-top: 10px;
     text-align: center;
     overflow: hidden;
     display: flex;
@@ -94,7 +94,6 @@ header h1 {
     font-size: 36px;
     background: #b10000;
     color: #fff;
-    margin-top: 20px;
     padding: 0 15px;
 }
 
@@ -111,7 +110,6 @@ header h1 {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
     transform: scale(1.05);
 }
-
 
 /* =note section */
 .note {
@@ -135,9 +133,7 @@ header h1 {
 /* =footer */
 footer {
     border-top: 2.5px solid #858585;
-    text-align: center;
 }
-
 
 footer h1 {
     background: url(../IMG/BrendanPixel.png) no-repeat;
@@ -161,7 +157,6 @@ footer p {
 footer p strong {
     color: #b10000;
 }
-
 
 footer p a {
     color: #858585;
@@ -190,107 +185,3 @@ footer .h1-2:hover {
     transform: scale(1.1); /* Increased size on hover */
     filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.2)); /* Added image shadow */
 }
-
-@media (max-width: 768px) {
-    .container_12 {
-        margin-top: 20px;
-    }
-    
-    header h1 {
-        font-size: 32px; /* Decrease font size for header on mobile */
-    }
-
-    .main {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .main .grid_4 {
-        width: 90%;
-        margin: 10px 0;
-    }
-
-    .prices {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .prices .grid_4 {
-        width: 90%;
-        margin: 10px 0;
-    }
-
-    .note {
-        width: 90%;
-        margin: 10px 0;
-    }
-
-    .note p {
-        font-size: 14px; /* Decrease font size for note section text on mobile */
-    }
-
-    footer {
-        text-align: center; /* Center align footer content on mobile */
-        padding: 10px 0; /* Add padding to footer content */
-    }
-
-    footer h1,
-    footer .h1-2 {
-        margin: 10px auto; /* Center align and adjust margins for footer logos */
-        display: block;
-    }
-
-    footer p {
-        margin: 5px auto; /* Center align and adjust margins for footer text */
-    }
-}
-    /* Mobile responsiveness */
-    @media screen and (max-width: 767px) {
-        .main {
-            display: block;
-            width: 90%;
-            margin: 0 auto;
-        }
-
-        .main .grid_4 {
-            width: 100%;
-            margin-bottom: 20px;
-        }
-
-        .price .amount {
-            font-size: 24px;
-            padding: 5px 10px;
-        }
-
-        .price p {
-            font-size: 14px;
-        }
-
-        .note {
-            width: 90%;
-            margin: 20px auto;
-            font-size: 14px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-        }
-
-        footer h1,
-        footer .h1-2 {
-            display: block;
-            margin: 0 auto 10px;
-            text-indent: 0;
-            background: none;
-            font-size: 24px;
-            width: auto;
-            height: auto;
-        }
-
-        footer p {
-            display: block;
-            margin: 10px 0 0;
-        }
-    }
