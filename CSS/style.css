@@ -185,3 +185,67 @@ footer .h1-2:hover {
     transform: scale(1.1); /* Increased size on hover */
     filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.2)); /* Added image shadow */
 }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .container_12 {
+        margin-top: 20px;
+    }
+    
+    header h1 {
+        font-size: 32px; /* Decrease font size for header on mobile */
+    }
+
+    .main {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .main .grid_4 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .main .package {
+        margin-bottom: 10px;
+    }
+
+    .price {
+        margin-top: 10px;
+        text-align: center;
+        overflow: hidden;
+        display: block;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .note {
+        width: 90%;
+        margin: 20px auto;
+        font-size: 14px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
+
+    footer h1,
+    footer .h1-2 {
+        display: block;
+        margin: 0 auto 10px;
+        text-indent: 0;
+        background: none;
+        font-size: 24px;
+        width: auto;
+        height: auto;
+    }
+
+    footer p {
+        display: block;
+        margin: 10px 0 0;
+    }
+}
