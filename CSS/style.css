@@ -189,7 +189,7 @@ footer .h1-2:hover {
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     .container_12 {
-        margin-top: 20px;
+        margin-top: 40px;
     }
     
     header h1 {
@@ -200,10 +200,12 @@ footer .h1-2:hover {
         display: block;
         width: 90%;
         margin: 0 auto;
+		background: powderblue;
+
     }
 
     .main .grid_4 {
-        width: 100%;
+        width: auto;
         margin-bottom: 20px;
     }
 
@@ -222,6 +224,9 @@ footer .h1-2:hover {
         transition: box-shadow 0.3s ease, transform 0.3s ease;
     }
 
+    .price p {
+        background: #ffffff;
+    }
     .note {
         width: 90%;
         margin: 20px auto;
@@ -230,7 +235,7 @@ footer .h1-2:hover {
 
     footer {
         text-align: center;
-        padding: 10px;
+        padding: 50px;
     }
 
     footer h1,
