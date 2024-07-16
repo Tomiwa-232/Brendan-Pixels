@@ -15,6 +15,7 @@
     font-style: normal;
 }
 
+/* General Styles */
 body {
     background-color: #F5F5F5;
     font-family: 'Montserrat', sans-serif;
@@ -27,16 +28,14 @@ body {
     margin-top: 60px;
 }
 
-/* =header */
 header h1 {
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     color: #000000;
+    margin: 0;
 }
 
-/* =main section */
 .main {
     display: flex;
     justify-content: space-between;
@@ -47,7 +46,6 @@ header h1 {
     background: #131311;
     color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
-    margin-top: 10px;
     padding: 20px;
     text-align: center;
     box-shadow: 5px 5px 5px rgba(2, 2, 2, 0.479);
@@ -81,29 +79,34 @@ header h1 {
 }
 
 .price {
-    margin-top: 10px;
+    margin-top: 30px;
     text-align: center;
     overflow: hidden;
     display: flex;
+    flex-direction: column; /* Stack elements vertically */
     align-items: center;
     justify-content: center;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
+    position: relative; /* Ensure relative positioning */
 }
 
 .price .amount {
     font-size: 36px;
     background: #b10000;
     color: #fff;
-    padding: 0 15px;
+    padding: 0 100px;
+    margin-bottom: 10px; /* Ensure margin bottom for spacing */
 }
 
-.price p {
+.package .price p {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 500;
-    text-align: left;
-    padding: 3px 5px;
-    margin: auto;
+    text-align: center; /* Center text for consistency */
+    padding: 5px;
+    margin: 0; /* Remove default margin for clean layout */
+    background: #fff; /* White background for contrast */
+    color: #000000;
 }
 
 .price:hover {
@@ -111,14 +114,12 @@ header h1 {
     transform: scale(1.05);
 }
 
-/* =note section */
 .note {
     color: #000000;
     padding: 10px;
     border-radius: 5px;
     margin: 20px 0;
     font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .note p {
@@ -129,6 +130,7 @@ header h1 {
     color: #b10000;
     letter-spacing: 1px;
 }
+
 
 /* =footer */
 footer {
@@ -186,29 +188,37 @@ footer .h1-2:hover {
     filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.2)); /* Added image shadow */
 }
 
-/* Mobile responsiveness */
+/* Media Queries */
+@media (max-width: 1200px) {
+    .container_12 {
+        width: 95%; /* Adjust width for large tablets */
+    }
+}
+
+@media (max-width: 992px) {
+    .container_12 {
+        width: 90%; /* Adjust width for tablets */
+    }
+}
+
 @media (max-width: 768px) {
     .container_12 {
-        margin-top: 20px;
+        width: 85%; /* Adjust width for large smartphones */
     }
-    
+
     header h1 {
         font-size: 32px; /* Decrease font size for header on mobile */
     }
 
     .main {
         display: block;
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
     }
 
     .main .grid_4 {
         width: 100%;
         margin-bottom: 20px;
-    }
-
-    .main .package {
-        margin-bottom: 10px;
     }
 
     .price {
@@ -222,15 +232,29 @@ footer .h1-2:hover {
         transition: box-shadow 0.3s ease, transform 0.3s ease;
     }
 
+    .price .amount {
+        font-size: 36px;
+        background: #b10000;
+        color: #fff;
+        padding: 0 15px;
+        margin-bottom: 10px; /* Ensure margin bottom for spacing */
+    }
+
+    .price p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center; /* Center text for consistency */
+        padding: 5px;
+        margin: 0; /* Remove default margin for clean layout */
+        background: #fff; /* White background for contrast */
+        color: #000000;
+    }
+
     .note {
         width: 90%;
         margin: 20px auto;
         font-size: 14px;
-    }
-
-    footer {
-        text-align: center;
-        padding: 10px;
     }
 
     footer h1,
@@ -244,8 +268,8 @@ footer .h1-2:hover {
         height: auto;
     }
 
-    footer p {
-        display: block;
-        margin: 10px 0 0;
+    footer .h1-2 {
+        margin-left: 0; 
+        margin-top: 20px;
     }
 }
