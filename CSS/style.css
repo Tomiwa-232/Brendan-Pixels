@@ -225,6 +225,13 @@ footer .h1-2:hover {
             /* Decrease font size for header on mobile */
         }
 
+        body {
+            font-family: 'Montserrat', sans-serif !important;
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+        }
+
         .main {
             display: block;
             width: 80%;
