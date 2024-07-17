@@ -7,33 +7,30 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Roboto';
-    src: url('fonts/Roboto-Regular.ttf') format('truetype'),
-         url('fonts/Roboto-Bold.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-
 /* General Styles */
 body {
     background-color: #F5F5F5;
-    font-family: 'Montserrat', sans-serif required!;
+    font-family: 'Montserrat', sans-serif !important; /* Apply Montserrat font globally */ 
     color: #000000;
     margin: 0;
     padding: 0;
 }
 
 .container_12 {
-    margin-top: 60px;
+    margin-top: 80px;
+    max-width: 1200px; Ensure max-width controls the container
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header h1 {
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat font globally */
     text-align: center;
     text-transform: uppercase;
     font-size: 40px;
     color: #000000;
-    margin: 0;
+    margin-bottom: 80px;
 }
 
 .main {
@@ -99,9 +96,9 @@ header h1 {
 }
 
 .package .price p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 800;
     text-align: center; /* Center text for consistency */
     padding: 5px;
     margin: 0; /* Remove default margin for clean layout */
@@ -128,13 +125,14 @@ header h1 {
 
 .note p strong {
     color: #b10000;
-    letter-spacing: 1px;
 }
-
 
 /* =footer */
 footer {
+    padding: 0 20px;
     border-top: 2.5px solid #858585;
+    text-align: center;
+    max-width: 100%; /* Ensure border does not exceed container width */
 }
 
 footer h1 {
@@ -143,7 +141,7 @@ footer h1 {
     text-indent: -9999px;
     width: 200px;
     height: 50px;
-    margin-left: -20px;
+    margin-left: -10px;
     display: inline-block;
     vertical-align: middle;
 }
@@ -158,6 +156,11 @@ footer p {
 
 footer p strong {
     color: #b10000;
+    transition: all ease 0.5s;
+}
+
+footer p strong:hover {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.349);
 }
 
 footer p a {
@@ -165,18 +168,13 @@ footer p a {
     text-decoration: none;
 }
 
-footer p:hover {
-    color: #000000;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-}
-
-footer .h1-2{
+footer .h1-2 {
     background: url(../IMG/LOGO.png) no-repeat;
     background-size: cover;
     text-indent: -9999px;
     width: 80px;
     height: 70px;
-    margin-left: 80px;
+    margin-left: 60px;
     margin-top: 20px;
     display: inline-block;
     vertical-align: right;
@@ -240,10 +238,10 @@ footer .h1-2:hover {
         margin-bottom: 10px; /* Ensure margin bottom for spacing */
     }
 
-    .price p {
+    .package .price p {
         font-family: 'Montserrat', sans-serif;
         font-size: 16px;
-        font-weight: 500;
+        font-weight: 800;
         text-align: center; /* Center text for consistency */
         padding: 5px;
         margin: 0; /* Remove default margin for clean layout */
@@ -256,20 +254,22 @@ footer .h1-2:hover {
         margin: 20px auto;
         font-size: 14px;
     }
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    footer {
+        padding: auto;
+        max-width: 100%; /* Ensure footer does not exceed container width */
+    }
 
     footer h1,
     footer .h1-2 {
+        margin: 10px auto;
         display: block;
-        margin: 0 auto 10px;
-        text-indent: 0;
-        background: none;
-        font-size: 24px;
-        width: auto;
-        height: auto;
     }
 
-    footer .h1-2 {
-        margin-left: 0; 
-        margin-top: 20px;
+    footer p {
+        margin: 5px auto;
     }
 }
