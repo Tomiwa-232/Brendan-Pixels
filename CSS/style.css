@@ -227,7 +227,7 @@ footer .h1-2:hover {
 
         .main {
             display: block;
-            width: 100%;
+            width: 80%;
             margin: 0 auto;
         }
 
@@ -271,7 +271,7 @@ footer .h1-2:hover {
         }
 
         .note {
-            width: 90%;
+            width: 80%;
             margin: 20px auto;
             font-size: 14px;
         }
